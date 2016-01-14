@@ -36,6 +36,7 @@ public class Solutions {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solutions. */
         int n; 
+        // long is used so it stores larger numbers
         long sum = 0;
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
