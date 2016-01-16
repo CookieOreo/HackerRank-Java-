@@ -30,7 +30,7 @@ public class Solution {
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
         for(int i = 0; i < n; i++){
-            //directly adds as they're inputting number
+            //directly adds as they're inputting numbers
             sum += in.nextInt();
         }
         System.out.println(sum);
