@@ -56,7 +56,7 @@ public class DiagonalDifference{
             for(int a_j=0; a_j < n; a_j++){
                 a[a_i][a_j] = in.nextInt();
                 if(a_i == a_j){
-              //finds the number needed for primary diagonal and directly adds it. They're at (1,1),(2,2),(3,3),(4,4),...,(n,n).
+              //finds the number needed for primary diagonal and directly adds it. They're at (1,1),(2,2),(3,3),(4,4),...,(n,n). (Placesaver)
                     primary += a[a_i][a_j];
                 }
             }
