@@ -39,12 +39,22 @@ public class TimeConversion {
         Scanner in = new Scanner(System.in);
         String time = in.next();
         String[] timearray = time.split("");
-        if (timearray[8] == 'P'){
-        	if()
-        	(timearray + 1) % 3;
+        if (timearray[8] == "P"){
+        	if(timearray[0] == "1" && timearray[1] == "2"){
+        		break;
+        	}
+        	else{
+        		//adds 1 to the 1st digit of hour
+        		timearray[0] = timearray[1]) - 48 + 1;
+        		//adds 2 to 2nd digit of hour 
+        		timearray[1] = timearray[1] - 48 + 2;
+        	}
         }
         else{
-
+        	if(timearray[0] == "1" && timearray[1] == "2"){
+        		timearray[0] = "0";
+        		timearray[1] = "0";
+        	}
         }
         for(int i = 0; i < timearray.length; i++){
         	System.out.print(timearray[i]);
