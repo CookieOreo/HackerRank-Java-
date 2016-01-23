@@ -38,25 +38,34 @@ public class TimeConversion {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner in = new Scanner(System.in);
         String time = in.next();
+        int fdigit, sdigit;
+        fdigit = sdigit = 1;
         String[] timearray = time.split("");
-        if (timearray[8] == "P"){
-        	if(timearray[0] == "1" && timearray[1] == "2"){
-        		break;
+        if (timearray[8].equals("P")){
+        	if(timearray[0].equals("1") && timearray[1].equals("2")){
+                fdigit = 1;
+                sdigit = 2;
         	}
         	else{
         		//adds 1 to the 1st digit of hour
-        		timearray[0] = timearray[1]) - 48 + 1;
+                fdigit = Integer.parseInt(timearray[0]) + 1;
         		//adds 2 to 2nd digit of hour 
-        		timearray[1] = timearray[1] - 48 + 2;
+                sdigit = Integer.parseInt(timearray[1]) + 2;
         	}
         }
         else{
-        	if(timearray[0] == "1" && timearray[1] == "2"){
-        		timearray[0] = "0";
-        		timearray[1] = "0";
+        	if(timearray[0].equals("1") && timearray[1].equals("2")){
+                fdigit = 0;
+                sdigit = 0;
         	}
+            else{
+                fdigit = Integer.parseInt(timearray[0]);
+                sdigit = Integer.parseInt(timearray[1]);
+            }
         }
-        for(int i = 0; i < timearray.length; i++){
+        System.out.print(fdigit);
+        System.out.print(sdigit);
+        for(int i = 2; i < timearray.length - 2; i++){
         	System.out.print(timearray[i]);
         }
     }
