@@ -41,6 +41,7 @@ public class TimeConversion {
         int fdigit, sdigit;
         fdigit = sdigit = 1;
         String[] timearray = time.split("");
+        //if it's PM then checks if it's 12:XX:XXPM first since it doesn't change, then does the appropriate addition
         if (timearray[8].equals("P")){
         	if(timearray[0].equals("1") && timearray[1].equals("2")){
                 fdigit = 1;
@@ -54,6 +55,7 @@ public class TimeConversion {
         	}
         }
         else{
+            //if it's AM checks if it's 12:XX:XXAM first since that's 00:XX:XX, else does nothing.
         	if(timearray[0].equals("1") && timearray[1].equals("2")){
                 fdigit = 0;
                 sdigit = 0;
