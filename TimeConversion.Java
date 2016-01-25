@@ -65,8 +65,10 @@ public class TimeConversion {
                 sdigit = Integer.parseInt(timearray[1]);
             }
         }
+        //prints our first and second digit since those are the hour digits and are the only ones being affected
         System.out.print(fdigit);
         System.out.print(sdigit);
+        //then prints out all the other characters excluding the "AM/PM"
         for(int i = 2; i < timearray.length - 2; i++){
         	System.out.print(timearray[i]);
         }
