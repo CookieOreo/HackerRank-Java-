@@ -36,7 +36,7 @@ public class TimeConversion {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        //Scans in the input (need to include checks for correct input)
+        //Scans in the input (need to include checks for correct input for hour minutes seconds and AM/PM)
         Scanner in = new Scanner(System.in);
         String time = in.next();
         int fdigit, sdigit;
