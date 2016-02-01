@@ -63,13 +63,14 @@ public class AngryProfessor {
             int n = in.nextInt();
             int k = in.nextInt();
             int a[] = new int[n];
+            //as the time is being inputted we increase # of lateness if the time is > 0
             for(int a_i=0; a_i < n; a_i++){
                 a[a_i] = in.nextInt();
                 if(a[a_i] <= 0){
                     check++;
                 }
             }
-            //check if lateness is greater than or less than threshhold
+            //check if # of lateness is greater than or less than threshhold
             if(check >= k){
                 System.out.println("NO");
             }
