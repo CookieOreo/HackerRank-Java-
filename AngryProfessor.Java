@@ -70,7 +70,7 @@ public class AngryProfessor {
                     check++;
                 }
             }
-            //check if # of lateness is greater than or less than threshhold
+            //check if # of lateness is greater than or less than threshhold.
             if(check >= k){
                 System.out.println("NO");
             }
